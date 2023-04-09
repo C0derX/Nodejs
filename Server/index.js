@@ -3,14 +3,18 @@ import bodyParser from "body-parser";
 
 import cors from "cors";
 
+import userRoutes from "./routes/users.js";
+
 const app = express();
 const port= 5000;
 
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get("/",(req,res)=> res.send("Hello from the Express server"));
+app.use("/",userRoutes); 
 
+app.get("/",(req,res)=> res.send("Hello from the Express server"));
+app.all("*",(req, res) => res.send("That route does not exist"));
 app.listen(port, ()=>
 console.log(`Server is listening on port : http://localhost:${port}`)
 );
