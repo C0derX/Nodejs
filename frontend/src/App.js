@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import AddEdit from "./pages/AddEdit";
@@ -12,6 +13,7 @@ function App() {
   return (
     <BrowserRouter>
 <div className='App'>
+  <Header />
   <ToastContainer />
   <Routes>
     <Route exact path='/' element={<Home />}></Route>
