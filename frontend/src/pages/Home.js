@@ -30,7 +30,7 @@ const onDeleteUser = async (id)=>{
     }
 };
     return(
-        <div style={{marginTop:"150px"}}>
+        <div style={{marginTop:"50px"}}>
             <table className="styled-table">
                 <thead>
                     <tr>
