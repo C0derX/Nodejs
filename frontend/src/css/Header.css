@@ -20,6 +20,7 @@
     font-weight: bold;
     color: #fefefe;
     margin-top:7px;
+    display: flex;
 }
 
 .ico {
@@ -54,6 +55,8 @@ ul{
 
 ul li a p{
     color: var(--txt-color);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 ul li a p.active{

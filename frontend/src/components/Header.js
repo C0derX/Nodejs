@@ -18,7 +18,7 @@ const Header = ()=>{
     return(
         <div className="navv">
         <header className="header">
-            <div className="logo"><a href="/"><img className="ico" src="/logo192.png" alt="React App" /></a></div>
+            <div className="logo"><a href="/"><img className="ico" src="/logo192.png" alt="React App" /></a><p>Simple React App</p></div>
             <div className="check" id="check">
                 <div className="line"></div>
                 <div className="line"></div>
